@@ -1,0 +1,12 @@
+<mat-toolbar>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/my-account" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <mat-icon>event_seat</mat-icon>
+      <span>My Account</span>
+    </button>
+  </mat-menu>
+  <span>Sorare Club Management Tool</span>
+</mat-toolbar>
